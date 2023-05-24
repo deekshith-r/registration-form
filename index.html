@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Registration Form</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"
+                    required>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Age</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Age"
+                    required>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Address</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Address"
+                    required>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"
+                    pattern="\d{10}"
+                    onkeypress="return onlyNumberKey(event)"
+                    required>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Password"
+                    required>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"
+                    required>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" required>
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Favorite Field Game</span>
+          <div class="gender-category">
+            <input type="checkbox" name="field-game" id="hockey" >
+            <label for="hockey">Hockey</label>
+            <input type="checkbox" name="field-game" id="badminton" >
+            <label for="badminton">Badminton</label>
+            <input type="checkbox" name="field-game" id="football" >
+            <label for="badminton">Football</label>
+            <input type="checkbox" name="field-game" id="basketball" >
+            <label for="badminton">Basketball</label>
+            <input type="checkbox" name="field-game" id="throwball" >
+            <label for="badminton">Throwball</label>
+          </div>
+        </div>
+        <div class="profile-picture-box">
+            <span class="profile-picture-title">Profile Picture</span>
+            <input type="file" name="profilePicture" id="profilePicture" required>
+          </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
